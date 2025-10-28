@@ -1,0 +1,186 @@
+/** === BODY === **/
+
+body {
+  background-color: #2b221e;
+  color: #e4e2dd;
+  font-family: 'Lovelace', serif;
+  margin: 0;
+  line-height: 1.6;
+  letter-spacing: 0,3px;
+}
+
+
+
+/** === HEADER === **/
+.site-header {
+  background-color: #3b2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header a { 
+  text-decoration: none;
+  color: #e4e2dd;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.site-header a:hover {
+  color: #87996e;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 3rem;
+  flex: 1;
+  align-items: center;  
+}
+
+.nav-left { 
+  justify-content: flex-end;
+}
+
+.oblong-logo {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/** === HERO IMAGE === **/
+.firstimg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  object-fit: cover;
+}
+
+
+/** === INTRO TEXT === **/
+.introtext {
+  text-align: left;
+  font-family: 'Lovelace', serif;
+  color: #e4e2dd;
+  margin: 4rem auto;
+}
+
+.introtext h2 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0.8rem 0;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+.introtext h2:hover {
+  transform: translateX(0.4rem);
+}
+
+
+/* === Skapar trappstegseffekt === */
+.introtext h2:nth-child(1) { margin-left: 10rem;}
+.introtext h2:nth-child(2) { margin-left: 16rem;}
+.introtext h2:nth-child(3) { margin-left: 21rem;}
+.introtext h2:nth-child(4) { margin-left: 27rem;}
+
+
+/* === Second Hero === */
+.stretchedpic {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+
+
+/* === BOOKS GRID === */
+.booksinshelf {
+  display: grid;
+  background-color: #a3b18a;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #2b221e;
+  max-width: 1000px;
+}
+
+
+.biocover img { 
+ 
+}
+
+/* === FORM === */
+form {
+  background-color: rgba(43, 34, 30, 0.7);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  color: #a3b18a;
+  font-family: 'Lovelace', serif;
+  max-width: 1000px;
+  margin: 3rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+input, textarea {
+  background-color: rgba(237, 230, 219, 0.1);
+  border: 1px solid #a3b18a;
+  color: #e4e2dd;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  font-family: inherit;
+}
+
+button {
+  background-color: #a3b18a;
+  color:  #2b221e;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover { 
+  background-color: #87996e;
+  transform: scale(1.03);
+}
+
+.about {
+    text-align: left;
+  font-family: 'Lovelace', serif;
+  color: #e4e2dd;
+  margin: 4rem auto;
+}
+
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #bdb8b0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+
+}
+
