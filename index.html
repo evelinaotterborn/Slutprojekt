@@ -4,160 +4,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Book Nook</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <Header class="site-header">
-        <!-- Header logo -->
+    <!-- header -->
+    <header class="site-header">
+
+        <!-- Left header Nav menu -->
+        <nav class="nav-right" aria-label="Primary navigation">
+            <a href="#">Home</a>
+            <a href="#">Books</a>
+        </nav>
+
+        <!-- Header centered logo -->
         <div class="oblong-logo-light">
-            <img src="Examensprojekt/logos/oblong-logo-light.svg" alt=" Oblong logo">
+            <img class="oblong-logo" src="logos/Light-oblong.svg" alt="Oblong The book nook logo">
         </div>
 
-        <!-- header Nav menu -->
-        <nav class="menu">
-            <ul>
-                <li>Home</li>
-                <li>Books</li>
-                <li>Reccomend a book to us</li>
-                <li>Contact</li>
-            </ul>
+        <!-- Right header Nav menu -->
+        <nav class="nav-left" aria-label="Secondary navigation">
+            <a href="#">Recommend a book to us</a>
+            <a href="#">Contact</a>
         </nav>
-    </Header>
+    </header>
 
     <!-- Main feed -->
     <main>
 
         <!-- First intro picture -->
-        <img src="Examensprojekt/img/javier-grixo-p1opmw12wvk-unsplash.jpg" alt="chessboard-on-table-beside-window">
-        <p> Photo by <a
+
+        <img class="firstimg" src="img/javier-grixo-p1opmw12wvk-unsplash.jpg" alt="chessboard-on-table-beside-window">
+        <p class="phototext"> Photo by <a
                 href="https://unsplash.com/@grixo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Javier
                 Grixo</a> on <a
                 href="https://unsplash.com/photos/chessboard-on-table-beside-window-p1opmw12wvk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </p>
 
         <!-- Intro text-->
+
+
         <div class="introtext">
-            <h1>Hello, and welcome to the book nook!</h1>
-            <h2>a place to relax, get your next read </h2>
-            <h2>grab your coffee or tea</h2>
-            <h2>and lets read together</h2>
+            <h2>Hello, and welcome to the book nook!</h1>
+                <h2>a place to relax, get your next read </h2>
+                <h2>grab your coffee or tea</h2>
+                <h2>and lets read together</h2>
         </div>
+        <div class="phototext">
+            <img class="stretchedpic" src="img/patrick-tomasso-Oaqk7qqNh_c-unsplash (2).jpg"
+                alt="Photo by Patrick Tomasso">
 
-        <img src="" alt="">
-
-        Photo by <a
-            href="https://unsplash.com/@impatrickt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Patrick Tomasso</a> on <a
-            href="https://unsplash.com/photos/open-book-lot-Oaqk7qqNh_c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
+            Photo by <a
+                href="https://unsplash.com/@impatrickt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                Patrick Tomasso</a> on <a
+                href="https://unsplash.com/photos/open-book-lot-Oaqk7qqNh_c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
         <div>
             <h2>Books from my bookshelf</h2>
-            <a
-                href="https://www.akademibokhandeln.se/bok/if-we-were-villains-the-sensational-tiktok-book-club-pick/9781785656477">If
-                We Were Villains <br> M.L Rio </a>
-            <p>Oliver Marks has just served ten years for the murder of one of his closest friends - a murder he may or
-                may not have committed. On the day he's released, he's greeted by the detective who put him in prison.
-                Detective Colborne is retiring, but before he does, he wants to know what really happened ten years
-                ago.</p>
+            <article class="bookshelf">
+                <div class="booksinshelf">
+                    <h4 class="bookname">If We Were Villains - M.L Rio</h4>
 
-            <a href="https://www.akademibokhandeln.se/bok/dead-poets-society/9781401308773">Dead Poet Society <br> N.H
-                Kleinbaum </a>
-            <p>Todd Anderson and his friends at Welton Academy can hardly believe how different life is since their new
-                English professor, the flamboyant John Keating, has challenged them to 'make your lives extraordinary!
-                Inspired by Keating, the boys resurrect the Dead Poets Society -- a secret club where, free from the
-                constraints and expectations of school and parents, they let their passions run wild.</p>
+                    <p>                      
+                        Oliver Marks has just served ten years for the murder of one of his closest friends - a murder he
+                        may or may not have committed. On the day he's released, he's greeted by the detective who put him in prison.
+                        Detective Colborne is retiring, but before he does, he wants to know what really happened ten years ago.
+                        Through out the books twist and turns, you get to see the beauty of a tragedy, and the horror of love.
+                    </p>
+                    <a
+                        href="https://www.akademibokhandeln.se/bok/if-we-were-villains-the-sensational-tiktok-book-club-pick/9781785656477">
+                        Read more and buy it at the retailer! </a>
+                    <img class="biocover" src="img/iwwv.png" alt="Bookcover of If We were Villains by M.L Rio">
+                </div>
+            </article>
 
-            <a href="https://www.akademibokhandeln.se/bok/before-the-coffee-gets-cold/9781529029581"> Before the Coffee
-                Gets Cold <br> Toshikazu Kawaguchi</a>
-            <p>Explores the age-old question: what would you do if you could travel back in time? More importantly, who
-                would you want to meet, maybe for one last time?In a cosy back alley in Tokyo, there is a cafe which has
-                been serving carefully brewed coffee for more than one hundred years. </p>
-        </div>
+            <article class="bookshelf">
+                <div class="booksinshelf">
+                    <h4 class="bookname"> Dead Poet Society - N.H Kleinbaum</h4>
+                    <p>Todd Anderson and his friends at Welton Academy can hardly believe how different life is since
+                        their
+                        new
+                        English professor, the flamboyant John Keating, has challenged them to 'make your lives
+                        extraordinary!
+                        Inspired by Keating, the boys resurrect the Dead Poets Society -- a secret club where, free from
+                        the
+                        constraints and expectations of school and parents, they let their passions run wild.</p>
+                    <a class="readmore"
+                        href="https://www.akademibokhandeln.se/bok/dead-poets-society/9781401308773">Read more and buy
+                        it at the retailer! </a>
 
-        <a href="https://www.akademibokhandeln.se/search?q=heartstopper">Heartstopper volume 1-5 <br> Alice Oseman</a>
-        <p>Boy meets boy. Boys become friends. Boys fall in love. The bestselling LGBTQ+ graphic novel series about
-            life, love, and everything that happens in between.Charlie and Nick are at the same school, but they've
-            never met . . . until one day when they're made to sit together. They quickly become friends, and soon
-            Charlie is falling hard for Nick, even though he doesn't think he has a chance. But love works in surprising
-            ways, and Nick is more interested in Charlie than either of them realised.</p>
+                    <img class="biocover" src="" alt="Bookcover of Dead Poet Society by N.H Kleinbaum">
 
-        <a href="https://www.akademibokhandeln.se/bok/practical-magic/9781398515512">Practical Magic <br> Alice
-            Hoffman</a>
-        <p>As children, sisters Gillian and Sally were forever outsiders in their small New England town, teased,
-            taunted and shunned for the air of magic that seems to sparkle in the air around them. All Gillian and Sally
-            ever wanted was to get away. And eventually they do - one marries, the other runs as far from home as she
-            can manage.Years later, however, tragedy will bring the sisters back together. And they'll find that no
-            matter what else may happen, they'll always have each other.</p>
 
-        <a href="https://www.akademibokhandeln.se/bok/the-summer-skies/9781408726136">The Summer Skies <br> Jenny
-            Colgan</a>
-        <p>Born into a family of successful pilots, Morag is used to flying high. But when a tragic accident above the
-            clouds grounds her, could the future she'd always imagined be suddenly out of reach?When she receives a call
-            telling her that her beloved grandfather has been taken ill, Morag leaves her fast-paced life in London to
-            return home to the tranquil Scottish Highlands. With her grandfather out of action, Morag has no choice but
-            to take over flying the local route in his rickety old plane, ferrying locals across the beautiful islands
-            of the archipelago. But as the weather takes a dramatic turn, Morag is forced to crash-land on a remote
-            island and suddenly finds herself far from civilisation and all alone. Then she discovers Gregor, the gruff
-            and reclusive ornithologist taking care of the island for the season. Though the pair don't see eye to eye,
-            Morag is forced to seek shelter at his cabin and it seems the pair are stuck together until help arrives.
-            However long that may be... As she awaits rescue, might Morag discover that a remote Scottish island, cut
-            off from real-life, is exactly the place she needs to be?</p>
+                </div>
+            </article>
+
+            <article class="bookshelf">
+                <div class="booksinshelf">
+                    <h4 class="bookname">Before the Coffee Gets Cold - Toshikazu Kawaguchi</h4>
+
+                    <p>Explores the age-old question: what would you do if you could travel back in time? More
+                        importantly,
+                        who
+                        would you want to meet, maybe for one last time?In a cosy back alley in Tokyo, there is a cafe
+                        which
+                        has
+                        been serving carefully brewed coffee for more than one hundred years. </p>
+                    <a class="readmore"
+                        href="https://www.akademibokhandeln.se/bok/before-the-coffee-gets-cold/9781529029581"> Read more
+                        and buy it at the retailer! </a>
+
+                    <img class="biocover" src="img/btcgc.jpg"
+                        alt="Bookcover of before the coffee gets cold by Toshikazu Kawaguchi">
+
+
+                </div>
+            </article>
+            <article class="bookshelf">
+                <div class="booksinshelf">
+                    <h4 class="bookname">Heartstopper Volume 1-5 - Alice Oseman </h4>
+                    <p>Boy meets boy. Boys become friends. Boys fall in love. The bestselling LGBTQ+ graphic novel
+                        series
+                        about
+                        life, love, and everything that happens in between.Charlie and Nick are at the same school, but
+                        they've never met . . . until one day when they're made to sit together. They quickly become
+                        friends,
+                        and soon Charlie is falling hard for Nick, even though he doesn't think he has a chance. But
+                        love works
+                        in surprising ways, and Nick is more interested in Charlie than either of them realised.</p>
+                    <a class="readmore" href="https://www.akademibokhandeln.se/search?q=heartstopper"> Read more and buy
+                        it at the retailer!</a>
+                    <img class="biocover" src="img/hsv1-5.jpg" alt="Bookcover of Heartstopper volume 1-5">
+                </div>
+            </article>
+
+            <article class="bookshelf">
+                <div class="booksinshelf">
+                    <h4 class="bookname">Practical Magic - Alice Hoffman</h4>
+                    <p>As children, sisters Gillian and Sally were forever outsiders in their small New England town,
+                        teased, taunted and shunned for the air of magic that seems to sparkle in the air around them.
+                        All Gillian and Sally ever wanted was to get away. And eventually they do - one marries, the
+                        other runs as far from home as she can manage.Years later, however, tragedy will bring the
+                        sisters back together. And they'll find that no matter what else may happen, they'll always have
+                        each other.</p>
+                    <a class="readmore" href="https://www.akademibokhandeln.se/bok/practical-magic/9781398515512"> Read
+                        more and buy it at the retailer!</a>
+                    <img class="biocover" src="img/pm.jpg" alt="Bookcover of Practial Magic by Alice Hoffman">
+
+                </div>
+            </article>
+            <article class="bookshelf">
+                <div class="booksinshelf">
+                    <h4 class="bookname">The Summer Skies - Jenny Colgan </h4>
+                    <p>Born into a family of successful pilots, Morag is used to flying high. But when a tragic accident
+                        above
+                        the
+                        clouds grounds her, could the future she'd always imagined be suddenly out of reach?When she
+                        receives a
+                        call
+                        telling her that her beloved grandfather has been taken ill, Morag leaves her fast-paced life in
+                        London
+                        to
+                        return home to the tranquil Scottish Highlands.</p>
+                    <a class="readmore" href="https://www.akademibokhandeln.se/bok/the-summer-skies/9781408726136"> Read
+                        more and buy it at the retailer!</a>
+                    <img class="biocover" src="img/" alt="Bookcover of Summer Skies by Jenny Colgan">
+
+
+
+                </div>
+            </article>
         </div>
 
         <!-- Quote section -->
-        <div class="quoutes">
+        <div class="quotes">
             <h3>"I live in two worlds. One is a world of books." <br> - Rory Gilmore in Gilmore Girls</h3>
             <h3>"Beware: for i am fearless, and therefore powerfull" <br> - Mary Shelley</h3>
             <h3>The only quiet woman is a dead one <br> - Sylvia Plath</h3>
         </div>
 
         <!-- Splide section -->
+        <h3>My favorite books</h3>
         <section class="splide" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="" alt="">
+                        <img src="img/iwwv.png" alt="Bookcover of If we were Villains by M.L Rio">
                     </li>
                     <li class="splide__slide">
-                        <img src="" alt="">
+                        <img src="img/btcgc.jpg" alt="Bookcover of Before the coffee gets cold by Toshikazu Kawaguchi ">
                     </li>
                     <li class="splide__slide">
-                        <img src="" alt="">
+                        <img src="img/hm.jpg" alt="Bookcover of Happy Medium by Sarah Adler">
                     </li>
                     <li class="splide__slide">
-                        <img src="" alt="">
+                        <img src="img/tvssoiw.jpg" alt="Bookcover of The very Secret Society of Irregular witches">
                     </li>
                     <li class="splide__slide">
                         <img src="" alt="">
                     </li>
                 </ul>
             </div>
+        </section>
 
+        <section>
             <!-- Form section-->
             <div>
-                <form action="https://formspree.io/f/your-form-id" method="POST">
+                <form action="https://formspree.io/f/xdkpakkq" method="POST">
+                    <input type="hidden" name="_subject" value="New Book Suggestion!">
+                    <input type="text" name="_gotcha" style="display:none">
                     <label for="book">Book recommendation:</label>
+
                     <input type="text" id="book" name="book" required placeholder="e.g. 'Frankenstein by Mary Shelley'">
 
                     <label for="email">Email (optional):</label>
                     <input type="email" id="email" name="email" placeholder="Only if you'd like a reply">
 
                     <label class="gdpr">
-                        <input type="checkbox" required>
+
                         I consent to this information being used only to collect book suggestions.
                     </label>
 
-                    <button type="submit">Send suggestion</button>
+                    <input type="checkbox" required>
+
+
                     <p class="gdpr-info"> Your information will only be used to receive your book suggestion.
                         No data is stored or shared. You can withdraw your consent anytime. </p>
+                    <button type="submit">Send suggestion</button>
                 </form>
-
             </div>
+        </section>
+        <section>
             <!-- About section -->
-            <div>
+            <div class="about">
                 <h3> About</h3>
                 <p>I live somewhere between candlelight and wildflowers — where stories breathe softly and time slows
                     down.
@@ -166,29 +248,36 @@
                     This space is my quiet corner of the world — a digital nook for those who find beauty in forgotten
                     pages, in moss-covered stones, and in the gentle ache of nostalgia.
                     Here, I collect words that linger, images that hum quietly, and moments that feel like late
-                    afternoon
-                    sunlight through an old window.
+                    afternoon sunlight through an old window.
                     If you've ever read by candlelight, or found comfort in the smell of old books, then welcome.
                     You've found your place among the pages
                 </p>
-
             </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <h1>Contact Us</h1>
-        <h1>Find Us</h1>
-        <h1>Social Media</h1>
-        <img src="Examensprojekt/logos/Light-short.svg" alt="Short logo">
+        <div class="footer-nav">
+            <h3>Contact Us</h3>
+            <a href="#">Email us!</a>
+            <h3>Find Us</h3>
+
+            <h3>Social Media</h3>
+            <a href="https://www.instagram.com/booksandcores/">Instagram</a>
+        </div>
+        <div class="footer-logo">
+            <img src="logos/Light-short.svg" alt="Short The book nook logo">
+        </div>
     </footer>
+
     <script>
-    // DOM Scrip init //
-  new Splide( '.splide', {
-    speed : 300,
-    type: sting = 'loop'
-  } ).mount();
-</script>
+        // DOM Scrip init //
+        new Splide('.splide', {
+            speed: 300,
+            type: 'loop'
+        }).mount();
+    </script>
 </body>
 
 </html>
