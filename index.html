@@ -16,8 +16,8 @@
 
         <!-- Left header Nav menu -->
         <nav class="nav-right" aria-label="Primary navigation, Home and Books">
-            <a href="#">Home</a>
-            <a href="#">Books</a>
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
         </nav>
 
         <!-- Header centered logo -->
@@ -27,16 +27,17 @@
 
         <!-- Right header Nav menu -->
         <nav class="nav-left" aria-label="Secondary navigation, Recommend a books to us and Contacts">
-            <a href="#">Recommend a book to us</a>
-            <a href="#">Contact</a>
+            <a href="#recommend">Recommend a book to us</a>
+            <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
     <!-- Main feed -->
     <main>
 
         <!-- First intro picture -->
-        <div class="image-container">
+        <div class="image-container" id="home">
             <img class="firstimg" src="img/javier-grixo-p1opmw12wvk-unsplash.jpg"
                 alt="chessboard-on-table-beside-window">
             <p class="phototext"> Photo by <a
@@ -55,7 +56,7 @@
             <h2>grab your coffee or tea</h2>
             <h2>and lets read together!</h2>
         </div>
-        <div class="image-container">
+        <div class="image-container" id="books">
             <img class="stretchedpic" src="img/patrick-tomasso-Oaqk7qqNh_c-unsplash (2).jpg"
                 alt="Photo by Patrick Tomasso">
             <p class="phototext">
@@ -66,7 +67,7 @@
             </p>
         </div>
         <div>
-            <h2 class="mybooks">Books from my bookshelf</h2>
+            <h2 class="mybooks">Some of my favorite books</h2>
             <article class="bookshelf">
                 <div class="booksinshelf" aria-label="Book: If We Were Villains">
                     <div class="bookinfo">
@@ -225,15 +226,50 @@
 
         <!-- Quote section -->
         <div class="quotes">
-            <h3>"I live in two worlds. One is a world of books." <br> - Rory Gilmore in Gilmore Girls</h3>
-            <h3>"Beware: for i am fearless, and therefore powerfull" <br> - Mary Shelley</h3>
-            <h3>The only quiet woman is a dead one <br> - Sylvia Plath</h3>
+            <figure>
+    <blockquote>“I would rather die of passion than boredom.”</blockquote>
+    <figcaption>— Van Gogh</figcaption>
+  </figure>
+<figure>
+  <blockquote>"I live in two worlds. One is a world of books."</blockquote>
+  <figcaption>- Rory Gilmore in Gilmore Girls</figcaption>
+  </figure>
+
+  <figure>
+    <blockquote>"Beware: for i am fearless, and therefore powerfull"</blockquote>
+    <figcaption> - Mary Shelley</figcaption>
+  </figure>
+
+    <figure>
+    <blockquote>"The only quiet woman is a dead one"</blockquote>
+    <figcaption>- Sylvia Plath</figcaption>
+  </figure>
+
+    <figure>
+    <blockquote>"In the end, we'll all become stories."</blockquote>
+    <figcaption> - Margaret Atwood</figcaption>
+  </figure>
+
+    <figure>
+    <blockquote>"Life starts all over again when it gets crisp in the fall"</blockquote>
+    <figcaption> - F. Scott Fitzgerald</figcaption>
+  </figure>
+
+    <figure>
+    <blockquote>Perhaps one did not wat to be lived so much as to be understood""</blockquote>
+    <figcaption>-  George Orwell, 1984</figcaption>
+  </figure>
+
+  <figure>
+    <blockquote>"I am out with my lanterns looking for myself "</blockquote>
+    <figcaption>- Emily Dickinson</figcaption>
+  </figure>
         </div>
 
         <!-- Splide section -->
 
         <div class="favesplide">
-            <h2>My favorite books</h2>
+            <h2>Books from my bookshelf:</h2>
         </div>
         <section class="splide" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
@@ -251,17 +287,33 @@
                         <img src="img/tvssoiw.jpg" alt="Bookcover of The very Secret Society of Irregular witches">
                     </li>
                     <li class="splide__slide">
-                        <img src="Examensprojekt/img/hsv1-5.jpg"
-                            alt="Book cover of Heartstopper volume 1-5 by Alice Oseman">
+                        <img src="img/hsv1-5.jpg" alt="Book cover of Heartstopper volume 1-5 by Alice Oseman">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/dps.jpg" alt="Book cover Dead Poets Society by N.H Kleinbaum ">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/pm.jpg" alt="Book cover Practical Magic by Alice Hoffman ">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/pobaw.jpg" alt="Book cover The Perks of Being a Wallflower by Stephen Chbosky">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/acotar.jpg" alt="Book cover A Court of Thorns and Roses by Sarah J. Mass">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/bl.jpg" alt="Book cover Book Lovers by Emily Henry">
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- Form section-->
-        <section>
-            <div>
-                <form action="https://formspree.io/f/xdkpakkq" method="POST" aria-label="Recommend a book to us">
+
+        <div>
+            <section id="recommend">
+                <form id="bookform" action="https://formspree.io/f/xdkpakkq" method="POST"
+                    aria-label="Recommend a book to us">
                     <input type="hidden" name="_subject" value="New Book Suggestion!">
                     <input type="hidden" name="_gotcha">
                     <label for="book">Book recommendation:</label>
@@ -287,21 +339,22 @@
                     </div>
                     <button type="submit">Send suggestion</button>
                 </form>
-            </div>
-        </section>
+            </section>
+        </div>
+
 
         <!-- About section -->
         <section>
             <div class="about" aria-label="About the website">
                 <h3> About</h3>
                 <p>I live somewhere between candlelight and wildflowers — where stories breathe softly and time slows
-                    down.
+                    down. <br>
                     Books have always been more than paper to me; they are small sanctuaries, places where ink becomes
-                    memory and silence becomes company.
+                    memory and silence becomes company. <br>
                     This space is my quiet corner of the world — a digital nook for those who find beauty in forgotten
-                    pages, in moss-covered stones, and in the gentle ache of nostalgia.
+                    pages, in moss-covered stones, and in the gentle ache of nostalgia. <br>
                     Here, I collect words that linger, images that hum quietly, and moments that feel like late
-                    afternoon sunlight through an old window.
+                    afternoon sunlight through an old window. <br>
                     If you've ever read by candlelight, or found comfort in the smell of old books, then welcome.
                     You've found your place among the pages
                 </p>
@@ -311,17 +364,21 @@
 
     <!-- Footer -->
     <footer>
+        <!-- Footer nav-->
         <div class="footer-nav">
             <div class="footer-column">
-                <h3>Contact Us</h3>
-                <a href="#">Email us!</a>
+                <section id="contact">
+                    <h3>Contact Us</h3>
+                    <a href="#">Email me!</a>
+                </section>
             </div>
+
             <div class="footer-column">
                 <h3>Social Media</h3>
                 <a href="https://www.instagram.com/booksandcores/">Instagram</a>
             </div>
         </div>
-
+        <!-- Footer logo-->
         <div class="footer-logo">
             <img src="logos/Light-short.svg" alt="Short The book nook logo">
         </div>
@@ -330,9 +387,46 @@
     <script>
         // DOM Scrip init //
         new Splide('.splide', {
+            type: 'loop',
+            focus: 'center',
+            perPage: 3,
+            gap: '-120px',     
+            trimSpace: false, 
             speed: 300,
-            type: 'loop'
+            pagination: false,
+            arrows: true,
+            breakpoints: {
+                1200: { gap: '-100px', perPage: 3 },
+                992: { gap: '-80px', perPage: 3 },
+                768: { gap: '1rem', perPage: 1 }
+            }
         }).mount();
+    </script>
+
+    <script>
+        document.getElementById("bookform").addEventListener("submit", async function (e) {
+            e.preventDefault(); // hindrar att sidan laddas om
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    alert("📚 Thank you! Your book suggestion has been sent!");
+                    form.reset(); // tömmer fälten
+                } else {
+                    alert("❌ Something went wrong. Please try again later.");
+                }
+            } catch (error) {
+                alert("⚠️ Could not connect to the server. Please try again.");
+            }
+        });
     </script>
 </body>
 
