@@ -227,43 +227,63 @@
         <!-- Quote section -->
         <div class="quotes">
             <figure>
-    <blockquote>“I would rather die of passion than boredom.”</blockquote>
-    <figcaption>— Van Gogh</figcaption>
-  </figure>
-<figure>
-  <blockquote>"I live in two worlds. One is a world of books."</blockquote>
-  <figcaption>- Rory Gilmore in Gilmore Girls</figcaption>
-  </figure>
+                <blockquote>“I would rather die of passion than boredom.”</blockquote>
+                <figcaption>— Vincent Van Gogh</figcaption>
+            </figure>
+            <figure>
+                <blockquote>"I live in two worlds. One is a world of books."</blockquote>
+                <figcaption>- Rory Gilmore in Gilmore Girls</figcaption>
+            </figure>
 
-  <figure>
-    <blockquote>"Beware: for i am fearless, and therefore powerfull"</blockquote>
-    <figcaption> - Mary Shelley</figcaption>
-  </figure>
+            <figure>
+                <blockquote>"Beware: for i am fearless, and therefore powerfull"</blockquote>
+                <figcaption> - Mary Shelley</figcaption>
+            </figure>
 
-    <figure>
-    <blockquote>"The only quiet woman is a dead one"</blockquote>
-    <figcaption>- Sylvia Plath</figcaption>
-  </figure>
+            <figure>
+                <blockquote>"The only quiet woman is a dead one"</blockquote>
+                <figcaption>- Sylvia Plath</figcaption>
+            </figure>
 
-    <figure>
-    <blockquote>"In the end, we'll all become stories."</blockquote>
-    <figcaption> - Margaret Atwood</figcaption>
-  </figure>
+            <figure>
+                <blockquote>"In the end, we'll all become stories."</blockquote>
+                <figcaption> - Margaret Atwood</figcaption>
+            </figure>
 
-    <figure>
-    <blockquote>"Life starts all over again when it gets crisp in the fall"</blockquote>
-    <figcaption> - F. Scott Fitzgerald</figcaption>
-  </figure>
+            <figure>
+                <blockquote>"Life starts all over again when it gets crisp in the fall"</blockquote>
+                <figcaption> - F. Scott Fitzgerald</figcaption>
+            </figure>
 
-    <figure>
-    <blockquote>Perhaps one did not wat to be lived so much as to be understood""</blockquote>
-    <figcaption>-  George Orwell, 1984</figcaption>
-  </figure>
+            <figure>
+                <blockquote>"Perhaps one did not wat to be lived so much as to be understood"</blockquote>
+                <figcaption>- George Orwell, 1984</figcaption>
+            </figure>
 
-  <figure>
-    <blockquote>"I am out with my lanterns looking for myself "</blockquote>
-    <figcaption>- Emily Dickinson</figcaption>
-  </figure>
+            <figure>
+                <blockquote>"I am out with my lanterns looking for myself "</blockquote>
+                <figcaption>- Emily Dickinson</figcaption>
+            </figure>
+
+             <figure>
+                <blockquote>"And sometimes I have kept my feelings to myself because i could find no language to describe them in."</blockquote>
+                <figcaption>- Jane Austen</figcaption>
+            </figure>
+
+             <figure>
+                <blockquote>"To live is the rarest thing in the world. Most people exist, that is all."</blockquote>
+                <figcaption>- Oscar Wilde </figcaption>
+            </figure>
+
+             <figure>
+                <blockquote>"You can, you should, and if you're brave enough to start, you will."</blockquote>
+                <figcaption>- Stephen King</figcaption>
+            </figure>
+
+              <figure>
+                <blockquote>"Normality is a paved road: It's comfortable to walk, but no flowers grow."</blockquote>
+                <figcaption>- Vincent Van Gogh</figcaption>
+            </figure>
         </div>
 
         <!-- Splide section -->
@@ -388,18 +408,18 @@
         // DOM Scrip init //
         new Splide('.splide', {
             type: 'loop',
-            focus: 'center',
             perPage: 3,
-            gap: '-120px',     
-            trimSpace: false, 
-            speed: 300,
+            focus: 'center',
+            gap: '1.5rem',
+            speed: 600,
+            drag: true,
             pagination: false,
-            arrows: true,
+            isNavigation: false,
+            slideFocus: true,
             breakpoints: {
-                1200: { gap: '-100px', perPage: 3 },
-                992: { gap: '-80px', perPage: 3 },
-                768: { gap: '1rem', perPage: 1 }
-            }
+                1024: { perPage: 2 },
+                768: { perPage: 1 },
+            },
         }).mount();
     </script>
 
