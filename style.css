@@ -10,7 +10,7 @@
   --accent-color: #a3b18a;
   --accent-hover: #87996e;
   --shadow-color: rgba(0, 0, 0, 0.3);
-  --font-main: 'Courier New', 'Courier', 'monospace'; 
+  --font-main: 'Courier New', 'Courier', 'monospace';
   --radius: 12px;
   --transition: 0.3s ease;
 }
@@ -151,7 +151,7 @@ html {
 }
 
 
-.introtext h1, 
+.introtext h1,
 .introtext p {
   font-weight: lighter;
   font-size: 1.5rem;
@@ -161,7 +161,7 @@ html {
   margin: 0;
 }
 
-.introtext h1:hover, 
+.introtext h1:hover,
 .introtext p:hover {
   transform: translateX(calc(var(--i) * 15px + 10px))
 }
@@ -177,6 +177,12 @@ html {
   gap: 1rem;
   margin: 3rem auto 4rem;
   max-width: 1500px;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: var(--accent-hover);
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 /* === BOOK CARD === */
@@ -214,7 +220,8 @@ html {
   margin: 0;
 }
 
-.book-title p, h2 {
+.book-title p,
+h3 {
   margin: 0;
 }
 
@@ -229,6 +236,7 @@ html {
   transition: transform var(--transition), box-shadow var(--transition);
   margin: 0;
 }
+
 /*
 .bio-cover:hover {
   transform: scale(1.05);
@@ -256,6 +264,12 @@ html {
 .quotestitle h2 {
   text-align: center;
   padding-top: 75px;
+    font-size: 2.5rem;
+  font-weight: lighter;
+  color: var(--accent-hover);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 /* === GRID === */
@@ -293,7 +307,16 @@ html {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 100px;
+
+}
+
+.favesplide h2 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: var(--accent-hover);
+  text-align: left;
+  padding-top: 40px;
+  margin-bottom: 0px;
 }
 
 .splide {
@@ -309,31 +332,44 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  height: 450px;
 }
 
 /* === settings for imgs === */
 .splide__slide img {
-  width: 90%;
-  max-width: 450px;
-  min-width: 200px;
   height: auto;
+  width: 90%;
+  object-fit: contain;
   border-radius: var(--radius);
   transition: transform 0.3s ease, opacity 0.3s ease;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-
 }
-
 
 /* === middle img - Active slide === */
 .splide__slide.is-active img {
   transform: scale(1.05);
   opacity: 1;
-  width: 100%;
   border-radius: var(--radius);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 110%;
+}
+
+.splide__slide.is-prev,
+.splide__slide.is-next { 
+  width: 200px;
+  opacity: 0.7;
+}
+
+.splide__track {
+  display: flex;
+  align-items: center;
 }
 
 
+.splide__arrow {
+  top: 50%;
+  transform: translateY(-50%) !important;
+  position: absolute !important;
+}
 
 
 /* =======================================
@@ -344,6 +380,12 @@ html {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
+    font-size: 2.5rem;
+  font-weight: lighter;
+  color: var(--accent-hover);
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 
@@ -458,7 +500,7 @@ button:hover {
 }
 
 .about h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: lighter;
   color: var(--accent-color);
   text-align: left;
@@ -530,7 +572,6 @@ footer a {
 .footer-column a:hover {
   color: var(--accent-color);
 }
-
 
 .footer-logo img {
   height: 150px;
