@@ -177,9 +177,9 @@ html {
   gap: 1rem;
   margin: 3rem auto 4rem;
   max-width: 1500px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: lighter;
-  color: var(--accent-hover);
+  color: var(--text-color);
   text-align: left;
   margin-top: 40px;
   margin-bottom: 0px;
@@ -220,9 +220,9 @@ html {
   margin: 0;
 }
 
-.book-title p,
-h3 {
+.book-title h3 {
   margin: 0;
+  font-weight: lighter;
 }
 
 
@@ -237,11 +237,7 @@ h3 {
   margin: 0;
 }
 
-/*
-.bio-cover:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-}
+
 
 /* === LINKS === */
 
@@ -264,9 +260,9 @@ h3 {
 .quotestitle h2 {
   text-align: center;
   padding-top: 75px;
-    font-size: 2.5rem;
+    font-size: 2rem;
   font-weight: lighter;
-  color: var(--accent-hover);
+  color: var(--text-color);
   text-align: center;
   margin-top: 40px;
   margin-bottom: 0px;
@@ -311,9 +307,9 @@ h3 {
 }
 
 .favesplide h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: lighter;
-  color: var(--accent-hover);
+  color: var(--text-color);
   text-align: left;
   padding-top: 40px;
   margin-bottom: 0px;
@@ -380,9 +376,9 @@ h3 {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-    font-size: 2.5rem;
+    font-size: 2rem;
   font-weight: lighter;
-  color: var(--accent-hover);
+  color: var(--text-color);
   text-align: left;
   margin-top: 40px;
   margin-bottom: 0px;
